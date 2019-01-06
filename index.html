@@ -2,26 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Situational Awareness</title>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />	
+	<title>Situational Awareness</title>
+	<link rel="stylesheet" href="Style.css" />
 </head>
 
 <body>
+	<div id='div_iframe_radar'> <!--Townsville-->
+		<iframe id='frame_radar' src='http://www.bom.gov.au/products/IDR731.loop.shtml' target="_top"></iframe>
+	</div>
+	
+	<div id='div_iframe_radar'> <!--Gympie-->
+		<iframe id='frame_radar' src='http://www.bom.gov.au/products/IDR231.loop.shtml#skip' target="_top"></iframe>
+	</div>
 
-<div id='div_iframe'>
-	<iframe id='frame' src='http://www.bom.gov.au/products/IDR233.loop.shtml' target="_top"></iframe></div>
+	<div id='div_iframe_radar'> <!--National-->
+		<iframe id='frame_radar' src='http://www.bom.gov.au/products/national_radar_sat.loop.shtml' target="_top"></iframe>
+	</div>
 
-
-	<h1>Bom Radar Nth Qld</h1>
-	<div id="div-BOM-Nth">
-		<iframe src="http://www.bom.gov.au/products/IDR663.loop.shtml#skip" id="BOM-Radar-Nth" scrolling="no" target="_bottom" >Requires iframe support</iframe>
-	</div>	
-<!--	<h1>Bom Radar SEQ</h1>
-		<iframe src="http://www.bom.gov.au/products/IDR663.loop.shtml#skip" width="500" height="300" id="Bom_Radar" name="Bom_Radar_Map" marginheight="5" marginwidth="10" scrolling="no" style="float: left" target="_top"> 
-		[ Framed Document - Requires iframe support ]
-		</iframe>	
-	<h1>RSS Feed of 13 19 40</h1>
--->	
+	<div id='div_iframe_baro'> <!--7 Day Forecast-->
+		<iframe id='frame_baro' src='http://www.bom.gov.au/australia/charts/viewer/index.shtml' target="_top"></iframe>
+	</div>
 </body>
 
 </html>
+
+
+
+
