@@ -4,7 +4,6 @@
 function ReturnTime(event) {
   var n = event.timestamp;
   document.getElementById("demo").innerHTML = n;
-  alert(now.date)
 }
   
 </script>
