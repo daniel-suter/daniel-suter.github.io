@@ -2,7 +2,7 @@
 // just a test for now   
 
 function ReturnTime(event) {
-  var n = event.timestamp;
+  var n = event.timeStamp;
   document.getElementById("demo").innerHTML = n;
 }
   
