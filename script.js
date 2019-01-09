@@ -1,7 +1,7 @@
 // just a test for now
 
 var myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello World!';
+myHeading.textContent = 'Hello world!';
 
 document.querySelector('html').onclick = fuction() {
   alert('stop it');
