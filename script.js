@@ -1,3 +1,3 @@
 'use strict';
-var myHeading = document.querySelector('h1');
+var myHeading = document.querySelector('h2');
 myHeading.textContent = 'Hello!';
