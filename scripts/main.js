@@ -1,4 +1,4 @@
-var rand_number = math.random();
+var rand_number = Math.random();
 var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello wide wide wide world';
 
