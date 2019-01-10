@@ -26,7 +26,7 @@ body {
 }
 header, footer, article, nav, div {
   padding: 1.2em;
-  background: black;
+  background: grey;
   }
 #pageHeader {
   grid-area: header;
