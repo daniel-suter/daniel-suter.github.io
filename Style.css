@@ -31,16 +31,48 @@
   height: 1000%;   /* 10x the div height to embrace the whole page */
 }
 
-#grid {
+body {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: repeat(5,1fr);
-  grid-gap: 2vw;
+  grid-template-areas:
+  "header header header"
+  "nav article option"
+  "footer footer footer"
+  grid-template-rows: 80px 1fr 70px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
   }
-#grid > div {
-  font-size: 5vw;
-  padding: .5em;
-  background: gold;
-  text-align: center;
 }
-//repeat(10,1fr);
+@media all and (max-width: 575px) {
+  body {
+    grid-template-areas:
+      "header"
+      "article"
+      "option"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-columns: 1fr;
+ }
+}
+header, footer, article, nav, div {
+  padding: 1.2em;
+  background: gold;
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle {
+  grid-area: article;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#siteAds {
+  grid-area: ads;
+  }
