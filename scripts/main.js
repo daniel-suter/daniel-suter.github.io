@@ -1,5 +1,3 @@
-var random_number = 1;
-
 var myHeading = document.querySelector('h1');
 myHeading.textContent = 'Hello wide wide wide world ' & random_number';
 
