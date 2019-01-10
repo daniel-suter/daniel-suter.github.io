@@ -4,10 +4,10 @@ body {
   "header header header"
   "nav article options"
   "footer footer footer";
-  grid-template-rows: 120px 1fr 70px;
-  grid-template-columns: 25% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
+  grid-template-rows: 125px 1fr 30px;
+  grid-template-columns: 10% 1fr 5%;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
   height: 100vh;
   margin: 0;
   }
@@ -19,7 +19,7 @@ body {
       "options"
       "nav"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-rows: 125px 1fr 70px 1fr 30px;
     grid-template-columns: 1fr;
  }
 }
