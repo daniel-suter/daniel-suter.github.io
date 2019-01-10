@@ -1,42 +1,9 @@
-﻿#frame_radar { margin-top: -228px }
-#div_iframe_radar {
-  border-style: inset;
-  border-color: grey;
-  overflow:hidden;
-  height: 530px;
-  width: 540px;
-}
-#frame_radar {
-  width: 100%;
-  height: 1000%;   /* 10x the div height to embrace the whole page */
-}
-
-#frame_baro { margin-top: -300px }
-#div_iframe_baro {
-  border-style: inset;
-  border-color: grey;
-  overflow:hidden;
-  height: 540px;
-  width: 790px;
-}
-#div_webview_baro {
-  border-style: inset;
-  border-color: grey;
-  overflow:hidden;
-  height: 540px;
-  width: 790px;
-}
-#frame_baro {
-  width: 100%;
-  height: 1000%;   /* 10x the div height to embrace the whole page */
-}
-
 body {
   display: grid;
   grid-template-areas:
   "header header header"
   "nav article option"
-  "footer footer footer"
+  "footer footer footer";
   grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 20% 1fr 15%;
   grid-row-gap: 10px;
@@ -45,7 +12,7 @@ body {
   margin: 0;
   }
 }
-@media all and (max-width: 275px) {
+@media all and (max-width: 800px) {
   body {
     grid-template-areas:
       "header"
@@ -75,4 +42,36 @@ header, footer, article, nav, div {
   }
 #siteAds {
   grid-area: ads;
+  }
+  #frame_radar { margin-top: -228px }
+  #div_iframe_radar {
+    border-style: inset;
+    border-color: grey;
+    overflow:hidden;
+    height: 530px;
+    width: 540px;
+  }
+  #frame_radar {
+    width: 100%;
+    height: 1000%;   /* 10x the div height to embrace the whole page */
+  }
+
+  #frame_baro { margin-top: -300px }
+  #div_iframe_baro {
+    border-style: inset;
+    border-color: grey;
+    overflow:hidden;
+    height: 540px;
+    width: 790px;
+  }
+  #div_webview_baro {
+    border-style: inset;
+    border-color: grey;
+    overflow:hidden;
+    height: 540px;
+    width: 790px;
+  }
+  #frame_baro {
+    width: 100%;
+    height: 1000%;   /* 10x the div height to embrace the whole page */
   }
