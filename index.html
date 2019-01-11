@@ -26,6 +26,13 @@
 			<iframe id='frame_radar' src='http://www.bom.gov.au/products/national_radar_sat.loop.shtml' target="_top"></iframe>
 		</div>
 
+		<httpProtocol>
+		  <customHeaders>
+		    <add name="Content-Security-Policy" value="frame-ancestors http://www.bom.gov.au/australia/charts/viewer/index.shtml" />
+		    <!-- Test this option as Chrome supports CSP now for Iframe opening-->
+		  </customHeaders>
+		</httpProtocol>
+
 		<div id='div_webview_baro'> <!--7 Day Forecast-->
 			<webview id='frame_baro' src='http://www.bom.gov.au/australia/charts/viewer/index.shtml' target="_top"></webview>
 		</div>
