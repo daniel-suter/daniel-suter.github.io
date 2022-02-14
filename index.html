@@ -7,16 +7,16 @@
     <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
     <script>
         var map,vectorLayer,selectMarkerControl,selectedFeature;
-        var lat =   21.7679;
-            var lon            =    78.8718;
-            var zoom        =   5;
+        var lat =   -21.7679;
+            var lon            =    153.8718;
+            var zoom        =   4;
         var curpos = new Array();
         var position;
 
             var fromProjection = new OpenLayers.Projection("EPSG:4326");   // Transform from WGS 1984
-            var toProjection   = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
+            var toProjection = new OpenLayers.Projection("EPSG:900913"); // to Spherical Mercator Projection
 
-            var cntrposition       = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
+            var cntrposition = new OpenLayers.LonLat(lon, lat).transform( fromProjection, toProjection);
 
         function init()
         {
