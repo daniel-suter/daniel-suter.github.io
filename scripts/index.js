@@ -64,7 +64,7 @@ this, {
 trigger: function(e) {
 var lonlat = map.getLonLatFromPixel(e.xy);
 lonlat1= new OpenLayers.LonLat(lonlat.lon,lonlat.lat).transform(toProjection,fromProjection);
-alert("Hello..."+lonlat1.lon + "  " +lonlat1.lat);
+window.alert("Hello..."+lonlat1.lon + "  " +lonlat1.lat);
 }
 
 });
