@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>CLICK HANDLER</title>
+    <title>Updated</title>
     <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
     <script>
         var map,vectorLayer,selectMarkerControl,selectedFeature;
@@ -23,13 +23,13 @@
                 map = new OpenLayers.Map("Map",{
                             controls: 
                             [
-                                        new OpenLayers.Control.PanZoomBar(),                        
+                            new OpenLayers.Control.PanZoomBar(),                        
                             new OpenLayers.Control.LayerSwitcher({}),
                             new OpenLayers.Control.Permalink(),
                             new OpenLayers.Control.MousePosition({}),
                             new OpenLayers.Control.ScaleLine(),
                             new OpenLayers.Control.OverviewMap(),
-                                    ]
+                            ]
                               }
                                 );
                 var mapnik      = new OpenLayers.Layer.OSM("MAP"); 
@@ -45,7 +45,7 @@
             map.addControl(click);
 
             click.activate();
-};
+		};
 
 OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {               
  defaultHandlerOptions: {
