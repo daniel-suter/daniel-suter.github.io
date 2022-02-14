@@ -1,48 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Click Events</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
 
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>Situational Awareness with webview frames</title>
-	<link rel="stylesheet" href="Style.css" />
-</head>
-
-<body>
-
-	<header id="pageHeader">
-		<button onclick="reload()">reload page</button><h1>Just a test again 8</h1>
-		<h2>testing the name jazz</h2>
-	</header>
-
-  <article id="mainArticle">
-		<div id='div_iframe_radar'> <!--Townsville-->
-			<iframe id="frame_radar" src="http://www.bom.gov.au/products/IDR731.loop.shtml"></iframe>
-		</div>
-
-		<div id='div_iframe_radar'> <!--Gympie-->
-			<iframe id='frame_radar' src='http://www.bom.gov.au/products/IDR231.loop.shtml#skip' target="_top"></iframe>
-		</div>
-
-		<div id='div_iframe_radar'> <!--National-->
-			<iframe id='frame_radar' src='http://www.bom.gov.au/products/national_radar_sat.loop.shtml' target="_top"></iframe>
-		</div>
-
-		<httpProtocol>
-		  <customHeaders>
-		    <add name="Content-Security-Policy" value="frame-ancestors http://www.bom.gov.au/australia/charts/viewer/index.shtml" />
-		    <!-- Test this option as Chrome supports CSP now for Iframe opening-->
-		  </customHeaders>
-		</httpProtocol>
-
-		<div id='div_webview_baro'> <!--7 Day Forecast-->
-			<webview id='frame_baro' src='http://www.bom.gov.au/australia/charts/viewer/index.shtml' target="_top"></webview>
-		</div>
-
-	</article>
-  <nav id="mainNav">Nav</nav>
-  <div id="siteAds">options</div>
-  <footer id="pageFooter">Footer</footer>
-
-		<script src="scripts/main.js"></script>
-	</body>
-
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+      async
+    ></script>
+  </body>
 </html>
